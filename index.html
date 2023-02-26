@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro: Patrick</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="principal">
+        <span>
+            <img src="https://cdn-icons-png.flaticon.com/512/126/126157.png" alt="" width="50px">
+        </span>
+        <h1>Controle Financeiro</h1>
+        <form>
+            <label for="conta">Adicionar conta:</label>
+            <input type="text" id="conta">
+            <input type="date" id="dataConta" id="data-input">
+            <button type="button" onclick="adicionarConta()">Adicionar</button>
+            <br>
+            <label for="dinheiro">Adicionar entrada de dinheiro:</label>
+            <input type="text" id="dinheiro">
+            <input type="date" id="dataDinheiro" id="data-input">
+            <button type="button" onclick="adicionarDinheiro()">Adicionar</button>
+        </form>
+    </div>
+    <div id="resultados">
+        <h2>Contas a pagar:</h2>
+        <ul id="listaContas">
+        </ul>
+        <h2>Entrada de dinheiro:</h2>
+        <ul id="listaDinheiro">
+        </ul>
+        <div id="resultados_numeros">
+            <h2>total gasto:</h2>
+            <h3 id="totalGasto">R$ 0</h3>
+            <h2>total recebido:</h2>
+            <h3 id="totalRecebido">R$ 0</h3>
+            <h2>sobra:</h2>
+            <h3 id="sobra">R$ 0</h3>
+        </div>
+    </div>
+    
+</body>
+</html>
